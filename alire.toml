@@ -1,0 +1,19 @@
+name = "adascope_target"
+description = "Firmware portion of the Adascope project"
+version = "1.0.0"
+licenses = "BSD-3-Clause"
+
+authors = ["Jean-Sebastien Demers", "Anne-Sophie Cusson", "Florian Koudjonou", "Basma Kaanane"]
+website = "https://github.com/GNAT-Academic-Program/adascope_target"
+maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
+maintainers-logins = ["ohenley"]
+tags = ["oscilloscope", "embedded", "stm32f429disco", "adc"]
+
+executables = ["firmware"]
+
+[[depends-on]]
+stm32f429disco = "0.1.0"
+stm32_gui = "0.1.0"
+
+[[pins]]
+gnat_arm_elf = { version='12.2.1' }
